@@ -1,0 +1,1648 @@
+@font-face {
+ font-family: "Alice";
+ src: url("polices/Alice-Regular.ttf") format("truetype")
+}
+@font-face {
+ font-family: "Dancing";
+ src: url("polices/DancingScript-VariableFont_wght.ttf") format("truetype")
+}
+@font-face {
+ font-family: "Courgette";
+ src: url("polices/Courgette-Regular.ttf") format("truetype")
+}
+
+@font-face {
+ font-family: "Lora";
+ src: url("polices/Lora/Lora_ttf/Lora-Regular.ttf") format("truetype")
+}
+@font-face {
+ font-family: "Lora_Bold";
+ src: url("polices/Lora/Lora_ttf/Lora-Bold.ttf") format("truetype")
+}
+@font-face {
+ font-family: "Lora_Italic";
+ src: url("polices/Lora/Lora_ttf/Lora-Italic.ttf") format("truetype")
+}
+@font-face {
+ font-family: "Lobster";
+ src: url("polices/Lobster2/LobsterTwo-Regular.ttf") format("truetype")
+}
+@font-face {
+ font-family: "Lobster_Bold";
+ src: url("polices/Lobster2/LobsterTwo-Bold.ttf") format("truetype")
+}
+@font-face {
+ font-family: "Lobster_BoldItalic";
+ src: url("polices/Lobster2/LobsterTwo-BoldItalic.ttf") format("truetype")
+}
+
+html{
+    --scroll-behavior: smooth;
+    scroll-behavior: smooth;
+}
+    
+
+html, body{
+    padding: 0px;
+    margin: 0;
+}
+
+
+body{
+    background-image: url("Photos/eaufond.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+/******************************************************************************/
+/*                            CSS LIENS et TEXTES                             */
+/******************************************************************************/
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+p, li{
+    
+}
+
+p{
+    display: inline;
+    font-size: 20px;
+}
+
+.P_Retour_Ligne_Responsive{
+    display: none;
+}
+
+.P_or{
+    color: #c79e31;
+    font-weight: bold;
+}
+
+#P_description_equipage{
+    text-align: justify;
+}
+
+.Div_Texte_Contenu{
+    width: 100%;
+    text-align: justify;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+.Div_Texte_Contenu ul{
+    padding-left: 0px;
+}
+
+#Div_Texte_Contenu_equipage{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+#Div_Texte_equipage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+}
+
+#Div_Photo_Contenu_equipage{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 30%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#Div_Photo_Contenu_equipage_Responsive{
+    display: none;
+}
+
+
+#Div_Photo_Contenu_equipage img{
+    border-radius: 2%;
+    box-shadow: 8px 8px 15px black;
+}
+
+.P_Titres_Contenu{
+    font-size: 40px;
+    font-family: "Courgette";
+    color: #c79e31;
+}
+
+.P_puces{
+    display: inline;
+    color: #c79e31;
+    font-weight: bold;
+}
+
+.P_puces_Tarifs{
+    display: inline;
+}
+
+.P_fin_Programme{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: #c79e31;
+    font-weight: bold;
+}
+
+/******************************************************************************/
+/*                                    Images                                  */
+/******************************************************************************/
+
+.IMG_centre{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.IMG_centre a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#A_IMG_80{
+    width: 80%;
+}
+
+#A_IMG_70{
+    width: 70%;
+}
+
+#A_IMG_50{
+    width: 50%;
+}
+
+.IMG_centre img{
+    border-radius: 2%;
+    box-shadow: 8px 8px 15px black;
+    /*transform: translateX(50%); */
+}
+
+
+/******************************************************************************/
+/*                                    DIVs                                    */
+/******************************************************************************/
+
+#Div_Global{
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    
+}
+
+#Div_Top_Baniere_Responsive{
+    display: none;
+}
+
+#Div_Baniere{
+    display: flex;
+    position: fixed;
+    width: 100%;    
+    height: 10vh;
+    
+    justify-content: center;
+    align-items: center;
+    
+    background-color: black;
+    
+    border-bottom: 3px solid #c79e31;
+    border-top: 3px solid #c79e31;
+    
+}
+
+#Div_Baniere_2{
+    width: 100%;    
+    height: 10vh;
+}
+
+#Div_Gauche_Baniere {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 30%;
+    height: 10vh;
+    background-color: black;
+}
+
+#Div_Droite_Baniere{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    
+    width: 30%;
+    height: 10vh;
+    background-color: black;
+    
+}
+
+#Div_Centre_Baniere{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    height: 10vh;
+}
+
+#Div_Bouttons{
+ /*   position: relative; Ce positionnement me permet de gérer la taille des boutton par % */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+#Div_Langues{
+    padding-right: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    width: 30%;
+}
+
+#Div_Home{
+    padding-left: 20px;
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+}
+
+
+#Div_Contenu{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    min-height: 90vh;
+}
+
+
+
+/******************* PAGE INDEX *****************/
+
+
+#Div_SuperContenu_Index{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    
+    width: 100%;
+    height: 100%;
+}
+
+
+#Div_Contenu_Index{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    
+    width: 100%;
+    height: 90vh;
+    
+    background-image: url("Photos/ileIndex.jpg");
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+#Div_Titre_Index{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*border: 1px solid red;*/
+    height: 15%;
+    background-color: rgb(37, 189, 200, 0.5);
+}
+#Div_Titre_Index p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+
+
+#Div_SousTitre_Index{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+    background-color: transparent;
+    /*border: 1px solid white;*/
+    
+}
+
+#Div_SousTitre_Index2{
+    width: 100%;
+    text-align: center;
+    background-color: rgb(37, 189, 200, 0.4);
+
+}
+
+#Div_SousTitre_Index p{
+    
+    width: 100%;
+  
+    font-size: 60px;
+    font-family: "Lora";
+    color: white;
+}
+
+
+
+#P_Titres_Index{
+    font-size: 40px;
+    font-family: "Courgette";
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+#IMG_centre_Index{
+    width: 25%;
+    text-align: center;
+}
+
+#IMG_centre_Index_Responsive{
+    display: none;
+}
+
+#IMG_centre_Index img{
+    width: 80%;
+}
+
+#Div_Centre_Contenu_Index{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 85%;
+    /*border: 1px solid black;*/
+}
+
+
+#Div_Separation_Index{
+    border: 1px solid red;
+    height: 20%;
+}
+
+#Div_Contenu_Voilier_Index{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 10%;
+    background-color: transparent;
+    /*border: 1px solid green;*/
+}
+
+
+
+#Div_Voilier_Index{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+}
+
+#Div_Voilier_Index img{
+    width: 100%;
+}
+
+#Div_TexteVoilier_Index{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background-color: rgb(37, 189, 200, 0.4);
+    /*border: 1px solid yellow;*/
+}
+
+#Div_TexteVoilier_Index p{
+    font-size: 40px;
+    color: white;
+    font-family: "Dancing";
+}
+
+#Div_Separation_Parties_Index{
+    width: 90%;
+    border-top: 3px solid #c79e31;
+}
+
+
+#Div_Comment_Visiter_Index{
+    display: flex;
+    align-items: center;
+    width: 90%;
+        
+}
+
+#Div_Citation{
+    text-align: center;
+}
+#P_Citation{
+    font-family: "Dancing";
+    font-size: 30px;
+}
+
+
+#Div_2_Liens_Index{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 20%;
+    background-color: rgb(37, 189, 200, 0.4);
+    /*border: 1px solid red;*/
+}
+
+.Div_Liens_Index{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    height: 100%;
+    /*border: 1px solid red;*/
+}
+
+#Div_Lien1_Index{
+    
+}
+
+#Div_Lien2_Index{
+    
+}
+
+.Div_Boutton_Index{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 50px;
+    background-color: transparent;
+    border-radius: 50px 50px 50px 50px;
+    border: 2px solid white;
+}
+
+.P_Boutton_Index{
+    color: white;
+    font-family: "Lora"
+}
+
+
+#Div_Part2_Index{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-image: url("Photos/guna.jpg");
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#Div_Description_Index{
+    width: 90%;
+
+}
+
+#Div_Baspage_Index{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    background-color: black;
+    
+}
+
+.P_contact{
+    color: white;
+}
+
+#Div_Whatsapp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#Div_Email {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+/******************* FIN INDEX *****************/
+
+
+
+
+
+#Div_Gauche_Contenu, #Div_Droite_Contenu{
+    width: 30%;
+    height: 100%;
+}
+
+#Div_Centre_Contenu{
+    display: flex;
+    width: 70%;
+    min-height: 90vh;
+    
+    background-color: white;
+}
+
+.Div_ligne_separation_titres{
+    width: 100%;
+    
+    border-top: 2px solid #c79e31;
+    
+    
+}
+
+
+/******************************************************************************/
+/*                             CSS Bouttons                                   */
+/******************************************************************************/
+
+.boutton_enfant{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50%;
+    /*
+    background-color: #008dd4;
+    */
+    padding-right: 5px;
+    padding-left: 5px;
+    
+    /*
+    box-shadow: 2px 2px 8px black;
+    border-radius: 5px;
+    */
+}
+
+.A_boutton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.boutton p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+    font-size: 18px;
+    font-family: "Alice";
+    color: white;
+}
+
+.boutton p:hover{
+    
+}
+    
+    
+
+.boutton:hover p{
+    color: #c79e31;
+    /*background-color: #2692c3;*/
+    
+}
+
+.Div_Separation{
+    border-right: 1px solid #c79e31;
+    height: 30px;
+}
+
+
+
+/******************************************************************************/
+/*                           CSS page calendrier                              */
+/******************************************************************************/
+
+#Div_Calendrier{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+#Div_Mois{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+}
+
+#formulaire_moins{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+#formulaire_plus{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#Div_P_mois{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+#Div_P_mois_gauche{
+    width: 25%;
+}
+
+#Div_P_mois_droit{
+    width: 25%;
+}
+
+#P_mois{
+    display: flex;
+    width: 25%;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-family: "Lora_Italic";
+}
+
+
+.Div_Semaines{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.Div_Jour_Semaine{
+    width: 10%;
+    height: 60px;
+    display: flex;
+    border-bottom: 1px solid white;
+    border-right: 1px solid white;
+    background-color: #c79e31;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+#Div_Code_Couleur{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.Div_Contenant_Code_Couleur{
+    display: flex;
+    flex-direction: row;
+    height: 30px;
+    align-items: center;
+}
+
+.Div_Contenant_Code_Couleur p{
+    font-family: "Lora";
+    font-size: 16px;
+}
+
+
+#Div_Code_Couleur_Booke{
+    width: 50px;
+    height: 25px;
+    background-color: #2b5bb0;
+    border-radius: 10%;
+}
+
+#Div_Code_Couleur_Attente{
+    width: 50px;
+    height: 25px;
+    background-color: rgba(42,91,176,0.3);
+    border-radius: 10%;
+}
+
+
+.Div_Jour_dispo{
+    width: 10%;
+    height: 70px;
+    display: flex;
+    border-bottom: 1px solid white;
+    border-right: 1px solid white;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+.Div_Jour_booke{
+    width: 10%;
+    height: 70px;
+    display: flex;
+    border-bottom: 1px solid white;
+    border-right: 1px solid white;
+    background-color: #2b5bb0;
+    justify-content: center;
+    align-items: center;
+}
+
+.Div_Jour_attente{
+    width: 10%;
+    height: 70px;
+    display: flex;
+    border-bottom: 1px solid white;
+    border-right: 1px solid white;
+    background-color: rgba(42,91,176,0.3);
+    justify-content: center;
+    align-items: center;
+}
+
+#Div_Formulaire_Booking{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    font-family: "Lora";
+}
+
+#formulaire_Booking{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%
+}
+
+#Div_Input_Dates{
+    display: flex;
+    width:100%;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#Div_Input_Commentaire{
+    display: flex;
+    flex-direction: column;
+    width:100%;
+    justify-content: flex-start;
+    align-items: flex-start;
+   
+        
+}
+
+#Textarea_Form{
+    width: 100%;
+}
+
+#Input_Date_Depart{
+    display: none;
+}
+
+#P_Deja_Booke{
+    display: none;
+    color: red;
+    font-weight: bold;
+}
+
+#P_Disponible{
+    display: none;
+    color: green;
+    font-weight: bold;
+}
+
+#Div_Input_Submit{
+    width: 100%;
+}
+
+#Input_Submit_Booking{
+    display: none;
+    width: 100%;
+}
+
+/******************************************************************************/
+/*                           CSS page caroussel                               */
+/******************************************************************************/
+
+
+
+
+    #DivPrincipalCaroussel{
+        padding: 0px;
+        margin: 0px;
+        width: 100%;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+
+    
+    /*il s'agit du div qui se met devant tout pour me permettre d'afficher le .gif d'attente lorsqu'un commentaire est envoyé*/
+    #DivGlobalOverlay
+    {
+        position: absolute;
+        top: 0; left: 0;
+        width: 100%; height: 100%;
+        display: none;
+        justify-content: flex-end;
+    }
+    
+    /*il s'agit du Div qui va s'afficher au dessus de la page web pour afficher les photos*/                                                                                    
+    #overlay {
+        display : none; /* Par défaut, on cache l'overlay */
+        position: absolute;
+        top: 0; left: 0;
+        width: 100%; height: 100%;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(0,0,0,0.9);
+
+        transition-property: width;
+        transition-duration: 1s;
+    }
+    
+    #Commandes {
+        position: relative;
+        display : none;
+        top: 0; left: 0;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        z-index: 2; 
+
+        transition-property: width;
+        transition-duration: 1s;
+    }
+    
+    #Commandes_haut{
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+    }
+    
+    #Commandes_bas{
+        position: absolute;
+        bottom: 0;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        width: 100%;
+        height: 10%;
+    }
+    
+    #Retour img{
+        height: 50px;
+        padding-right: 30px;
+    }
+    
+    #Retour:hover img{
+        cursor: pointer;
+    }
+    
+    /*l'icone du chevron*/
+    #Chevron img{
+        height: 50px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    
+    #Chevron:hover img{
+        cursor: pointer;
+    }
+    
+    /*les pannaux de gauche et droite*/
+    #Gauche {
+        width: 20%;
+        height: 70%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex: 1;
+    }
+    
+    #Gauche:hover {
+        cursor: pointer;
+    }
+
+    #Centre, #Centre2 {
+        width: 80%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex: 1;
+    }
+
+    #Droite{
+        width: 20%;
+        height: 70%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        flex: 1;
+    }
+    
+    #Droite:hover {
+        cursor: pointer;
+    }
+
+
+#CadrePhotosMiniatures {
+    display: flex;
+    height: 60vh;
+    
+}
+
+#CadrePhotosMiniatures > div{               /*selectionne le div qui se trouve juste en dessous de CadrePhotosMiniatures*/
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    top: 0; left: -2000px;
+    width: 100%;
+    height: 100%;
+    overflow: scroll;
+    justify-content: center;
+
+    background-color: rgba(9,9,9,0.8);
+    
+    padding: 5px;
+    
+    box-shadow: -2px 2px 10px black;
+    -webkit-box-shadow: -2px 2px 10px black;
+    -moz-box-shadow: -2px 2px 10px black;
+    
+    flex: 4;
+    color: black;
+}
+
+
+#PetitDivDeLimageH{
+    margin: 2px;
+    width: 200px;
+    height: 200px;
+    background-size: auto 200px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    border: 1px solid black;
+}
+#PetitDivDeLimageL{
+    margin: 2px;
+    width: 200px;
+    height: 200px;
+    background-size: 200px auto;
+    background-position: center center;
+    background-repeat: no-repeat;
+    border: 1px solid black;
+}
+
+/*Animation permettant de faire glisser l'album depuis la gauche lorsque l'on arrive sur la page*/
+@keyframes animationAjouteAlbum {
+    0% {
+        transform: translateX(0px);
+    }
+    100% {
+        transform: translateX(2000px);
+    }
+}
+
+
+
+
+/******************************************************************************/
+/*                Enlever les fleches des Input de typeNumber                 */
+/******************************************************************************/
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+ 
+/* Chrome */
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button { 
+	-webkit-appearance: none;
+	margin:0;
+}
+ 
+/* Opéra*/
+input::-o-inner-spin-button,
+input::-o-outer-spin-button { 
+	-o-appearance: none;
+	margin:0
+}
+
+
+/******************************************************************************/
+/*                                 RESPONSIVE                                 */
+/******************************************************************************/
+
+@media screen and (max-width: 1280px)
+{
+
+    body{
+        background-image: none;
+    }
+    
+    p, li{
+        font-size: 12px;
+    }
+    
+    .P_Retour_Ligne_Responsive{
+        display: inline;
+    }
+    
+    .P_Titres_Contenu{
+        font-size: 20px;
+        font-family: "Courgette";
+        color: #c79e31;
+    }
+    
+    .Div_Texte_Contenu{
+        text-align: justify;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    
+    
+    #Div_Baniere{
+        flex-direction: column;
+        height: 9vh;
+    }
+    
+    #Div_Baniere_2{
+        flex-direction: column;
+        height: 9vh;
+    }
+    
+    
+    #Div_Top_Baniere_Responsive{
+        display: flex;
+        align-content: space-between;
+        width: 100%;
+        margin-top: 10px;
+    }
+    
+    #IMG_Home_Responsive_Dore{
+       display: none;
+    }
+    
+    #Div_Centre_Baniere{
+        width: 95%;
+        height: 10vh;
+    }
+    
+    #Div_Gauche_Baniere {
+        display: none;
+    }
+    
+    #Div_Droite_Baniere{
+        display: none;
+    }
+    
+    
+    #Div_Entre_Home_Langues{
+        width: 30px;
+    }
+    
+    #Div_Langues{
+        
+        padding-right: 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 30%;
+    }
+    #Div_Langues Div{
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    
+    
+    
+    /* Bouttons baniere */
+    
+    #Div_Bouttons{
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    
+  
+
+    .A_boutton{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+
+    .boutton p{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        height: 100%;
+        font-size: 9px;
+        font-family: "Alice";
+    }
+    
+    .Div_Separation{
+        height: 15px;
+    }
+    
+    
+    #Div_Whatsapp img{
+        width: 20px;
+    }
+    
+    #Div_Whatsapp p{
+        font-size: 10px;
+    }
+    
+    #Div_Email img{
+        width: 20px;
+    }
+    
+    #Div_Whatsapp p{
+        font-size: 10px;
+    }
+    
+    
+    /*/////////////////////////////*/
+    
+    
+    
+    
+    
+    
+    
+    #Div_Gauche_Contenu, #Div_Droite_Contenu{
+        width: 5%;
+        height: 100%;
+    }
+    
+
+    #Div_Centre_Contenu{
+        width: 95%;
+        min-height: 90vh;
+    }
+    
+    #Div_Texte_Contenu_equipage{
+        flex-direction: column-reverse;
+        align-items: center;
+        width: 100%;
+    }
+    
+    #Div_Texte_equipage{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    
+    
+    #Div_Photo_Contenu_equipage_Responsive{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        width: 90%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    #Div_Photo_Contenu_equipage{
+        display: none;
+    }
+    
+    #Div_Photo_Contenu_equipage_Responsive img{
+        border-radius: 2%;
+        box-shadow: 8px 8px 15px black;
+        
+    }
+    
+  
+    
+    /*************************** CALENDRIER ***********************************/
+    
+    #Div_Calendrier{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    
+    #Div_Mois{
+        height: 30px;
+    }
+
+    #P_mois{
+        font-size: 15px;
+        font-family: "Lora_Italic";
+    }
+    
+    #Div_Code_Couleur_Booke{
+        width: 40px;
+        height: 20px;
+    }
+
+    #Div_Code_Couleur_Attente{
+        width: 40px;
+        height: 20px;
+    }
+    
+    .Div_Contenant_Code_Couleur p{
+        font-size: 10px;
+    }
+
+
+    .Div_Jour_Semaine{
+        width: 20%;
+        height: 30px;
+    }
+    
+    .Div_Jour_Semaine p{
+        font-size: 10px;
+    }
+
+    .Div_Jour_dispo{
+        width: 20%;
+        height: 30px;
+    }
+    
+    .Div_Jour_dispo p{
+        font-size: 10px;
+    }
+    
+
+    .Div_Jour_booke{
+        width: 20%;
+        height: 30px;
+    }
+    
+    .Div_Jour_booke p{
+        font-size: 10px;
+    }
+
+    .Div_Jour_attente{
+        width: 20%;
+        height: 30px;
+    }
+    
+    .Div_Jour_attente p{
+        font-size: 10px;
+    }
+
+    
+    
+    #Div_Formulaire_Booking{
+        font-family: "Lora";
+        font-size: 12px;
+    }
+
+    #formulaire_Booking{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: 100%
+    }
+
+    #Div_Input_Dates{
+        display: flex;
+        flex-direction: column;
+        width:100%;
+        align-items: flex-start;
+    }
+    
+    .P_Espaces_Input_Dates{
+        display: none;
+    }
+
+    #Div_Input_Commentaire{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: flex-start;
+        align-items: flex-start;
+
+
+    }
+
+    #Textarea_Form{
+        width: 100%;
+    }
+
+    #Input_Date_Depart{
+        display: none;
+    }
+
+    #P_Deja_Booke{
+        display: none;
+        color: red;
+        font-weight: bold;
+    }
+
+    #P_Disponible{
+        display: none;
+        color: green;
+        font-weight: bold;
+    }
+
+
+
+    #Input_Submit_Booking{
+        display: none;
+    }
+    
+    
+    /************************* Fin CALENDRIER *********************************/
+    
+    
+    
+    
+    /******************* PAGE INDEX *****************/
+
+
+    #Div_Contenu_Index{
+        height: 85vh;
+        background-size: auto;
+    }
+
+    #Div_SousTitre_Index p{
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    #P_Titres_Index{
+        font-size: 30px;
+    }
+
+    P_Espaces_Index{
+        
+    }
+
+    #Div_TexteVoilier_Index p{
+        width: 80%;
+        font-size: 20px
+    }
+
+    .Div_Boutton_Index{
+        width: 100px;
+        height: 25px;
+        border-radius: 50px 50px 50px 50px;
+        border: 1px solid white;
+    }
+
+    .P_Boutton_Index{
+        font-size: 9px;
+    }
+
+    #Div_Separation_Parties_Index{
+        border-top: none;
+        border-bottom: 2px solid #c79e31;
+    }
+    
+    #Div_Part2_Index{
+        background-size: auto;
+    }
+    
+
+    #IMG_centre_Index{
+        display: none;
+    }
+
+    #IMG_centre_Index_Responsive{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    #IMG_centre_Index_Responsive img{
+        width: 50%;
+    }
+
+    .P_Espaces_Index{
+        display: none;
+    }
+    
+    #P_Citation{
+        font-size: 20px;
+    }
+
+    /******************* FIN INDEX *****************/
+
+
+
+    
+    /*************************** CAROUSSEL ***********************************/
+    
+    
+    
+    #PetitDivDeLimageH{
+        margin: 2px;
+        width: 150px;
+        height: 150px;
+        background-size: auto 150px;
+        background-position: center center;
+        background-repeat: no-repeat;
+        border: 1px solid black;
+    }
+    #PetitDivDeLimageL{
+        margin: 2px;
+        width: 150px;
+        height: 150px;
+        background-size: 150px auto;
+        background-position: center center;
+        background-repeat: no-repeat;
+        border: 1px solid black;
+    }
+    
+    #Retour img{
+        height: 30px;
+    }
+    
+    /*l'icone du chevron*/
+    #Chevron img{
+        height: 15px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    
+    
+    /************************* FIN CAROUSSEL **********************************/
+}
+
+
+
+
+/*pour le tel en position horizontale */
+/*Media queries pour une orientation paysage*/
+@media screen and (max-width: 1280px) and (orientation: landscape){
+    #Div_Baniere{
+        width: 100%;
+        height: 20vh;
+    }
+    
+    #Div_Baniere_2{
+        width: 100%;    
+        height: 20vh;
+    }
+    
+    .boutton p{
+        font-size: 15px;
+        font-family: "Alice";
+    }
+    
+    
+    
+    /******************* PAGE INDEX *****************/
+
+    #Div_Contenu_Index{
+        height: 80vh;
+
+    }
+   
+    #Div_Titre_Index{
+        height: 17%;
+    }
+    
+    #Div_Centre_Contenu_Index{
+        height: 83%;
+    }
+    
+    #P_Titres_Index{
+        font-size: 15px;
+    }
+    
+    #IMG_centre_Index_Responsive{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    #IMG_centre_Index_Responsive img{
+        width: 20%;
+    }
+    
+    /******************* FIN INDEX *****************/
+    
+}
+
+
+
+/*pour la tablette en poition verticale */
+@media screen and (min-height: 900px) {
+    #Div_Baniere{
+        width: 100%;
+        height: 12vh;
+    }
+    
+    #Div_Baniere_2{
+        width: 100%;    
+        height: 12vh;
+    }
+    
+    .boutton p{
+        font-size: 18px;
+        font-family: "Alice";
+    }
+}
+
+
+
+/*
+pour la tablette en poition horizontale 
+Media queries pour une orientation paysage sur tablette*/
+@media screen and (min-height: 500px) and (max-width: 1280px) and (orientation: landscape){
+    #Div_Baniere{
+        width: 100%;
+        height: 10vh;
+    }
+    
+    #Div_Baniere_2{
+        width: 100%;    
+        height: 10vh;
+    }
+    
+    .boutton p{
+        font-size: 15px;
+        font-family: "Alice";
+    }
+    
+    
+    /******************* PAGE INDEX *****************/
+
+    #Div_Contenu_Index{
+        height: 85vh;
+    }
+   
+    #Div_Titre_Index{
+        height: 17%;
+    }
+    
+    #Div_Centre_Contenu_Index{
+        height: 83%;
+    }
+    
+    #P_Titres_Index{
+        font-size: 25px;
+    }
+    
+    #IMG_centre_Index_Responsive{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    #IMG_centre_Index_Responsive img{
+        width: 20%;
+    }
+    
+    /******************* FIN INDEX *****************/
+    
+    
+
+}
+
